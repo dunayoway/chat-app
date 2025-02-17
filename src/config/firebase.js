@@ -9,8 +9,8 @@ import { doc, getFirestore, setDoc } from "firebase/firestore";
 import { toast } from "react-toastify";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDZjsCvIrBOnCf7iukt3LL5wslf_Ua-QhI",
-  authDomain: "dy-chat-app.firebaseapp.com",
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
   projectId: "dy-chat-app",
   storageBucket: "dy-chat-app.appspot.com",
   messagingSenderId: "187422113575",
